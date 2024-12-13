@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mountain Oasis Bed and Breakfast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="WebsiteLogo.jpeg" alt="Mountain Oasis Logo" class="logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="local-attractions.html">Local Attractions</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <div class="container">
+        <h1>Make a Reservation</h1>
+        <form action="confirmation.html" method="GET">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="room">Select Room:</label>
+            <select id="room" name="room" required>
+                <option value="Room 1">Room 1 (Queen Bed)</option>
+                <option value="Room 2">Room 2 (Queen Bed)</option>
+                <option value="Room 3">Room 3 (Queen Bed)</option>
+                <option value="Suite">Fami
+            </select>
+
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+    
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+    
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="6" required>
+    
+                <label for="requests">Special Requests:</label>
+                <textarea id="requests" name="requests" rows="4"></textarea>
+    
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </div>
+    </body>
+    </html>
+    
